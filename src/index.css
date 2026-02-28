@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Bússola Financeira Theme */
+    --background: 0 0% 97%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Primary - Green */
+    --primary: 158 55% 39%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light Gray */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 14% 45%;
+
+    --accent: 160 84% 95%;
+    --accent-foreground: 160 84% 25%;
+
+    /* Destructive - Red for expenses */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Green for income */
+    --success: 160 84% 39%;
+    --success-foreground: 0 0% 100%;
+
+    /* Warning - Orange/Yellow */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+
+    /* Income/Expense specific */
+    --income: 160 84% 39%;
+    --income-bg: 160 84% 95%;
+    --expense: 0 72% 51%;
+    --expense-bg: 0 72% 96%;
+
+    /* Pro label */
+    --pro: 160 84% 39%;
+
+    --border: 214 20% 90%;
+    --input: 214 20% 90%;
+    --ring: 160 84% 39%;
+
+    --radius: 0.75rem;
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 13% 35%;
+    --sidebar-primary: 160 84% 39%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 84% 95%;
+    --sidebar-accent-foreground: 160 84% 25%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 160 84% 39%;
+    --sidebar-muted: 220 13% 65%;
+  }
+
+  .dark {
+    --background: 220 13% 10%;
+    --foreground: 210 20% 96%;
+
+    --card: 220 13% 14%;
+    --card-foreground: 210 20% 96%;
+
+    --popover: 220 13% 14%;
+    --popover-foreground: 210 20% 96%;
+
+    --primary: 160 84% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 13% 18%;
+    --secondary-foreground: 210 20% 96%;
+
+    --muted: 220 13% 18%;
+    --muted-foreground: 215 14% 55%;
+
+    --accent: 160 84% 20%;
+    --accent-foreground: 160 84% 75%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 210 20% 96%;
+
+    --success: 160 84% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 38 92% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --income: 160 84% 45%;
+    --income-bg: 160 84% 15%;
+    --expense: 0 62% 50%;
+    --expense-bg: 0 62% 15%;
+
+    --pro: 160 84% 45%;
+
+    --border: 220 13% 22%;
+    --input: 220 13% 22%;
+    --ring: 160 84% 45%;
+
+    --sidebar-background: 220 13% 12%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 160 84% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 160 84% 15%;
+    --sidebar-accent-foreground: 160 84% 75%;
+    --sidebar-border: 220 13% 20%;
+    --sidebar-ring: 160 84% 45%;
+    --sidebar-muted: 215 14% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  .income-text {
+    @apply text-[hsl(var(--income))];
+  }
+
+  .expense-text {
+    @apply text-[hsl(var(--expense))];
+  }
+
+  .income-bg {
+    @apply bg-[hsl(var(--income-bg))];
+  }
+
+  .expense-bg {
+    @apply bg-[hsl(var(--expense-bg))];
+  }
+}
