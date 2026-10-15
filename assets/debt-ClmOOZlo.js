@@ -1,0 +1,1 @@
+const o={emprestimo_pessoal:"Empréstimo Pessoal",cartao_parcelado:"Cartão Parcelado",financiamento:"Financiamento",consorcio:"Consórcio",divida_informal:"Dívida Informal",outro:"Outro"},a={emprestimo_pessoal:"💰",cartao_parcelado:"💳",financiamento:"🏠",consorcio:"🤝",divida_informal:"🤞",outro:"📋"};export{a as D,o as a};
