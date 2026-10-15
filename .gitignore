@@ -26,3 +26,5 @@ supabase/.temp/
 *.njsproj
 *.sln
 *.sw?
+
+set_user_password.sql
