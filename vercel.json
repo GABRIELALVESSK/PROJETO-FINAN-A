@@ -1,4 +1,6 @@
 {
+  "buildCommand": "node build-dist.cjs",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",
